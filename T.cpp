@@ -1,5 +1,9 @@
 #include <bits/stdc++.h>
 
+#ifndef ONLINE_JUDGE
+#define DEBUG
+#endif
+
 using namespace std;
 
 const int INF = 1e9;
@@ -8,7 +12,7 @@ const double EP = 1e-9;
 const double PI = 3.141592653589793284626433832795;
 const int MP = 1e9+7;
 
-void init()
+void read()
 {
 }
 
@@ -22,11 +26,13 @@ void print()
 
 int main()
 {
+    cout << setprecision(18) << fixed;
+    cerr << setprecision(5) << fixed;
 #ifndef ONLINE_JUDGE
-    freopen("A.in", "r", stdin);
-    //freopen("A.out", "w", stdout);
+    assert(freopen("A.in", "r", stdin));
+    //assert(freopen("A.out", "w", stdout));
 #endif
-    init();
+    read();
     solve();
     print();
 }
