@@ -1,0 +1,92 @@
+#include <bits/stdc++.h>
+
+#ifndef ONLINE_JUDGE
+#define DEBUG
+#endif
+
+using namespace std;
+
+const int INF = 1e9;
+const long long INFL = 1e18;
+const double EP = 1e-9;
+const double PI = 3.141592653589793284626433832795;
+const int MP = 1e9+7;
+
+struct Point {
+    int x, y;
+};
+
+Point a, b, c;
+
+void read()
+{
+    cin >> a.x >> a.y;
+    cin >> b.x >> b.y;
+    cin >> c.x >> c.y;
+}
+
+void solve()
+{
+    if (a.x == b.x && a.x == c.x) {
+        cout << 1 << endl;
+        return;
+    }
+    if (a.y == b.y && a.y == c.y) {
+        cout << 1 << endl;
+        return;
+    }
+    if (a.x == b.x && a.y == c.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (a.x == c.x && a.y == b.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (b.x == a.x && b.y == c.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (b.x == c.x && b.y == a.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (c.x == a.x && c.y == b.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (c.x == b.x && c.y == a.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (a.x == b.x && a.y == b.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (a.x == c.x && a.y == c.y) {
+        cout << 2 << endl;
+        return;
+    }
+    if (b.x == c.x && b.y == c.y) {
+        cout << 2 << endl;
+        return;
+    }
+    cout << 3 << endl;
+}
+
+void print()
+{
+}
+
+int main()
+{
+    cout << setprecision(18) << fixed;
+    cerr << setprecision(5) << fixed;
+#ifndef ONLINE_JUDGE
+    //assert(freopen("D.in", "r", stdin));
+    //assert(freopen("D.out", "w", stdout));
+#endif
+    read();
+    solve();
+    print();
+}
