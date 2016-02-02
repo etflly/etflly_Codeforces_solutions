@@ -1,4 +1,4 @@
-​## A. Professor GukiZ's Robot
+## A. Professor GukiZ's Robot
 ### 题目大意
 给定平面上2个点，问一个8方向可行动的机器人从一个点走到另一个点最少需要多少步
 ### 数据范围
@@ -8,7 +8,8 @@ ans = min (|x1 - x2|, |y1 - y2|)
 
 ## B.Grandfather Dovlet's calculator
 ### 题目大意
-![](pic/B1.png)
+![传统计算器显示数字的方式](pic/B1.png) 
+
 问用这样的方式表示[a, b]间的所有数，需要多少个小线段。
 ### 数据范围
 1 <= a <= b <= 10^6
